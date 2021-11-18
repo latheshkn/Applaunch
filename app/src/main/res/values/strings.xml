@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Applaunch Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">welcome</string>
+    <string name="email_id">User Name</string>
+    <string name="your_email">YOUR EMAIL</string>
+    <string name="password">Password</string>
+    <string name="caps_password">PASSWORD</string>
+    <string name="dashboard">Login</string>
+    <string name="raj_kumar">Raj kumar</string>
+    <string name="mail">lathesh@gmail.com</string>
+    <string name="add_user">add user</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="user_name">Enter User Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="user_password">Test@123456</string>
+    <string name="user_email">testapp@google.com</string>
+    <string name="not_match">Email or Password not matched</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter User Email</string>
+    <string name="save">Save</string>
+    <string name="_0_c">0*C</string>
+    <string name="dash">---------</string>
+    <string name="fetching">Weather type</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="_40">40</string>
+    <string name="user">Users</string>
+    <string name="user_form">User Form</string>
+    <string name="cel"> °C</string>
+</resources>

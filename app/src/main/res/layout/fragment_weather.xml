@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".view.WeatherFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weatherContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/night_cloudy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/_0_c"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Text.Regular.Large.Black.Brown"
+            app:layout_constraintTop_toBottomOf="@+id/loadingAnimation">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/dash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            style="@style/Text.Regular.Large.Black.Brown"
+            app:layout_constraintTop_toBottomOf="@+id/temperature">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/fetching"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            style="@style/Text.Regular.Large.Black.Brown"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/weatherCondition"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityNameNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/_40"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            style="@style/Text.Regular.Medium.Black.Brown"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/weatherCondition"
+            app:layout_constraintStart_toEndOf="@+id/cityName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityHumidity"
+            style="@style/Text.Regular.Large.Black.Brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/humidity"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cityName"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityHumidityNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/_40"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            style="@style/Text.Regular.Large.Black.Brown"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cityName"
+            app:layout_constraintStart_toEndOf="@+id/cityName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityWindSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/wind_speed"
+            style="@style/Text.Regular.Large.Black.Brown"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cityHumidity"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cityWindSpeedNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/standard_0"
+            android:text="@string/_40"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            style="@style/Text.Regular.Large.Black.Brown"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cityHumidity"
+            app:layout_constraintStart_toEndOf="@+id/cityName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

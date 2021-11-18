@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text.Regular.Brown" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+    <style name="Text.Regular.Large.Brown" parent="Text.Regular.Brown">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.Regular.Large.Black.Brown" parent="Text.Regular.Large.Brown">
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+    <style name="Text.Regular.Medium.Brown" parent="Text.Regular.Brown">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.Regular.Medium.Black.Brown" parent="Text.Regular.Medium.Brown">
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+    <style name="Text.Bold.Large.White.Brown" parent="Text.Bold.Large.Brown">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text.Bold.Large.Brown" parent="Text.Bold.Brown">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.Bold.Brown" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CurvedButton" parent="Text.Bold.Large.White.Brown">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@drawable/bg_blue_curved_fill</item>
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="textAllCaps">true</item>
+
+    </style>
+</resources>
